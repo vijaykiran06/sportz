@@ -9,7 +9,7 @@ function Home() {
     overs: 0,
     commentary: [],
   });
-
+   
   useEffect(() => {
     const socket = new WebSocket("ws://localhost:5000");
 
@@ -22,8 +22,8 @@ function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white p-8">
-      <h1 className="text-5xl font-bold text-center mb-8">
+    <div className ="min-h-screen bg-slate-950 text-white p-8">
+      <h1 className ="text-5xl font-bold text-center mb-8">
         Sports Live App
       </h1>
 
