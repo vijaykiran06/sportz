@@ -9,8 +9,8 @@ function Home() {
     overs: 0,
     commentary: [],
   });
-   
-  useEffect(() => {
+    
+   useEffect(() => {
     const socket = new WebSocket("ws://localhost:5000");
 
     socket.onmessage = (event) => {
